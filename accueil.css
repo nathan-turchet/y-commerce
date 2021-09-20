@@ -1,0 +1,226 @@
+/*------- IMPORT --------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/*------- IMPORT --------*/
+
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+/*-------- TOP --------*/
+
+.top{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(223, 223, 223, 0.3);
+    border-bottom: 2px solid;
+}
+
+.top .banner{
+    margin-left: 20px;
+    width: 15%;
+}
+
+.top ul{
+    display: flex;
+}
+
+.top ul li{
+    padding: 15px;
+    margin: 5px;
+
+}
+
+.top ul li a{
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.top .btn{
+	display: inline-block;
+}
+
+.top p{
+    font-size: 60px;
+}
+
+.btn-right{
+    margin-right: 15px;
+}
+
+
+/*-------- TOP --------*/
+
+
+/*--------NOUVEAUTE -------*/
+
+.a-card{
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 215px;
+    box-shadow: 1px 1px 12px #555;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 20%;
+    height: 480px;
+    border-radius: 20px;  
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+p{
+    color: black;
+}
+
+.sec-1{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img1{
+    position: relative;
+    top: -145px;
+    right: -15px;
+    width: 90%;
+}
+
+.img2{
+    right: -40px;
+    position: relative;
+    top: -137px;
+    width: 75%;
+}
+
+.img3{
+    position: relative;
+    top: -146px;
+    width: 90%;
+}
+
+.img4{
+    position: relative;
+    top: -133px;
+    width: 90%;
+}
+
+a .card .text1{
+    position: relative;
+    top: -110px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a .card .text2{
+    position: relative;
+    top: -80px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a .card .text3{
+    position: relative;
+    top: -82px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a .card .text4{
+    position: relative;
+    top: -82px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a .card .title1{
+    position: relative;
+    top: -145px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+a .card .title2{
+    position: relative;
+    top: -110px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+a .card .title3{
+    position: relative;
+    top: -116px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+a .card .title4{
+    position: relative;
+    top: -116px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+a .card .prix1{
+    position: relative;
+    top: -70px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+
+a .card .prix2{
+    position: relative;
+    top: -35px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+
+a .card .prix3{
+    position: relative;
+    top: -42px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+
+a .card .prix4{
+    position: relative;
+    top: -42px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
