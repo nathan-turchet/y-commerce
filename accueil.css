@@ -93,7 +93,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 73%;
 }
 
 /*--------NOUVEAUTE -------*/
@@ -103,7 +103,7 @@
     border-bottom: 1px solid #a3a3a3;
     display: flex;
     align-items: center;
-    justify-content: center;
+    align-items: center;
 }
 
 .nouveaute img{
@@ -111,7 +111,43 @@
     margin: 5px;
 }
 
-/*--------CATEGORIE---------*/
+/*--------CREATION---------*/
+
+.creation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.creation .h2-creation{
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
+
+.creation .img-creation{
+    width: 100%;
+}
+
+.creation .btn-creation{
+    position: absolute;
+    top: 1290px;
+    right: 1431px;
+    font-size: 30px;
+    background-color: #c9192e;
+    border: none;
+    padding: 10px;
+}
+
+.creation .btn-creation:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 300ms;
+}
+
+/* --------CATEGORIE---------*/
 
 .categorie{
     padding: 20px;
@@ -186,4 +222,79 @@
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
     padding: 1px 5px;
+}
+
+/*------FOOTER-----*/
+
+footer{
+    align-items: flex-start;
+    background-color: #1c1c1c;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.info-footer-notre-marque{
+    top: -36px;
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.info-footer-aide{
+    top: -20px;
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.info-footer-acheter{
+    top: -35px;
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.info-footer-commande{
+    top: 16px;
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.h5-footer{
+    font-size: 2em;
+    color: white;
+}
+
+.p-footer{
+    color: white;
+    font-size: 1.5em;
+}
+
+.a-footer{
+    color: #589bc6;
+}
+
+.a-footer:hover{
+    text-decoration: underline;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.a-social-media{
+    font-size: 25px;
+    color: white;
+    padding-right: 25px;
+}
+
+.feedback{
+    padding-top: 45px;
 }
