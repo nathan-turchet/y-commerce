@@ -1,0 +1,357 @@
+/*------- IMPORT --------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/*------- IMPORT --------*/
+
+*{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*-------- TOP --------*/
+
+.top{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(223, 223, 223, 0.3);
+    border-bottom: 2px solid;
+}
+
+.top .banner{
+    margin-left: 20px;
+    width: 15%;
+}
+
+.top ul{
+    display: flex;
+}
+
+.top ul li{
+    padding: 15px;
+    margin: 5px;
+
+}
+
+.top ul li a{
+    position: relative;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    border-radius: 5px; 
+    padding: 10px;
+}
+
+.top ul li a:hover{
+    transition-duration: 300ms;
+    color: white;
+    background-color: black;
+}
+
+.top .btn{
+	display: inline-block;
+}
+
+.top p{
+    font-size: 60px;
+}
+
+.btn-right{
+    margin-right: 15px;
+}
+
+/*-------- TOP --------*/
+
+.div-slogan{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan{
+    text-align: center;
+    max-width: 500px;
+    font-size: 3em;
+    padding: 10px;
+}
+
+/*------MAIN + CONTANT ----*/
+
+.contant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 73%;
+}
+
+/*--------NOUVEAUTE -------*/
+
+.nouveaute{
+    padding: 20px;
+    border-bottom: 1px solid #a3a3a3;
+    display: flex;
+    align-items: center;
+}
+
+.nouveaute img{
+    width: 45%;
+    margin: 5px;
+}
+
+/*--------NOS FAVORIS-------*/
+
+.nos-favoris{
+    padding: 20px;
+    border-bottom: 1px solid #a3a3a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nos-favoris .h2-favoris{
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
+
+.img-favoris{
+    width: 106%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-favoris img{
+    width: 100%;
+}
+
+/*--------CREATION---------*/
+
+.creation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.creation .h2-creation{
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
+
+.creation .img-creation{
+    width: 100%;
+}
+
+.creation .btn-creation{
+    position: absolute;
+    top: 1565px;
+    right: 1431px;
+    font-size: 30px;
+    background-color: #c9192e;
+    border: none;
+    padding: 10px;
+}
+
+.creation .btn-creation:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 300ms;
+}
+
+/* --------CATEGORIE---------*/
+
+.categorie{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.categorie .h3-categorie h3{
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
+
+.categorie .categorie-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorie .media{
+    padding-right: .625rem;
+    padding-left: .625rem;
+    height: 275px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorie .media img{
+    width: 100%;
+}
+
+.categorie .media .overlay{
+    bottom: 0;
+    left: 9px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    background: rgba(31, 19, 19, 0.7);
+    width: 96%;
+    height: 273px;
+}
+
+.categorie .media .overlay .wrapper{
+    display: table;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.categorie .media .overlay .wrapper .inner{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.categorie .media .overlay .wrapper .inner h4{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 2em;
+    margin-left: 1.5rem;
+}
+
+.categorie .media .overlay .wrapper .inner .ul-categorie{
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.categorie .media .overlay .wrapper .inner .ul-categorie .li-categorie{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.categorie .media .overlay .wrapper .inner .ul-categorie .li-categorie .a-categorie{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: .2em;
+    color: #85BEE3;
+    font-size: 1rem;
+    line-height: 1.3em;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    padding: 1px 5px;
+}
+
+.media .overlay a {
+    pointer-events: auto;
+}
+
+.categorie .media .overlay .wrapper .inner .ul-categorie .li-categorie .a-categorie:hover{
+    transition-duration: 300ms;
+    
+}
+
+/*------FOOTER-----*/
+
+footer{
+    align-items: flex-start;
+    background-color: #1c1c1c;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.info-footer-notre-marque{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.info-footer-aide{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.info-footer-acheter{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.info-footer-commande{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.h5-footer{
+    font-size: 2em;
+    color: white;
+}
+
+.p-footer{
+    color: white;
+    font-size: 1.5em;
+}
+
+.a-footer{
+    color: #589bc6;
+}
+
+.a-footer:hover{
+    text-decoration: underline;
+}
+
+.social-media{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-social-media{
+    font-size: 25px;
+    color: white;
+    padding-right: 25px;
+}
+
+.feedback{
+    padding-top: 45px;
+}
+
+.par-produit{
+    padding-top: 45px;
+}
