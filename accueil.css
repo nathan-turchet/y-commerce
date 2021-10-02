@@ -52,12 +52,6 @@
     padding: 10px;
 }
 
-.top ul li a:hover{
-    transition-duration: 300ms;
-    color: white;
-    background-color: black;
-}
-
 .top .btn{
 	display: inline-block;
 }
@@ -355,3 +349,5 @@ footer{
 .par-produit{
     padding-top: 45px;
 }
+
+
