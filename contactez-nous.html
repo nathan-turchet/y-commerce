@@ -77,29 +77,24 @@
         <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">
     
         <div class="form-group">
-            <label for="firstName">Prénom</label>
-            <input type="text" id="firstName" name="firstName">
+            <input type="text" id="firstName" name="firstName" placeholder="Prénom">
         </div>
     
         <div class="form-group">
-            <label for="latsName">Nom</label>
-            <input type="text" id="lastName" name="lastName">
+            <input type="text" id="lastName" name="lastName" placeholder="Nom">
         </div>
     
         <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" placeholder="Email">
         </div>
 
         <div class="form-group">
-            <label for="number">Numéro de téléphone</label>
-            <input  name="number" id="number"></input>
+            <input  name="number" id="number" placeholder="Numéro de téléphone"></input>
         </div>
 
         <div class="form-group">
-            <label for="choix">Choisir un truc</label>
-            <select id="mon_select">
-                <option class="choix">Selectionnez  </option>
+            <select id="mon_select" >
+                <option selected disabled hidden>Selectionnez</option>
                 <option>Stage</option>
                 <option>Aleternance / Recrutement</option>
                 <option>Prise de contact</option>
@@ -109,8 +104,7 @@
         </div>
             
         <div class="form-group">
-            <label for="massage">Message</label>
-            <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Votre messages"></textarea>
         </div>
     
         <button type="submit">Envoyer</button>

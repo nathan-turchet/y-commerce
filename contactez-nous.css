@@ -147,10 +147,15 @@
     margin-bottom: 20px;
 }
 .form-group {
-    width: 100%;
+    width: 350px;
     margin-top: 20px;
     font-size: 20px;
 }
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
 .form-group input,
 .form-group textarea{
     width: 100%;
@@ -178,15 +183,14 @@ button[type="submit"] {
     padding: 20px;
     font-size: 24px;
     border-radius: 8px;
-    font-family: "Montserrat";
-    color: rgb(27, 166, 247);
+    color: rgb(42, 124, 172);
     text-align: center;
     cursor: pointer;
     margin-top: 10px;
     transition: 0.3s ease;
 }
 button[type="submit"]:hover {
-    background-color: rgb(214, 226, 236);
+    background-color: rgb(162, 197, 226);
 }
 #status {
     width: 90%;

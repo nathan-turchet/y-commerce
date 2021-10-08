@@ -4,17 +4,12 @@
 
 /*------- IMPORT --------*/
 
-
 *{
     font-family: 'Roboto', sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
-
-html{
-    scroll-behavior: smooth;
 }
 
 /*-------- TOP --------*/
@@ -27,14 +22,14 @@ html{
     justify-content: space-between;
     width: 100%;
     height: 150px;
-    background-color: #ffffffef;
+    background-color: rgba(223, 223, 223, 0.3);
     border-bottom: 2px solid;
 }
 
 .top .banner{
-    min-width: 200px;
     margin-left: 20px;
     width: 15%;
+    min-width: 200px;
 }
 
 .top ul{
@@ -44,15 +39,18 @@ html{
 .top ul li{
     padding: 15px;
     margin: 5px;
+
 }
 
 .top ul li a{
-    padding: 10px;
+    position: relative;
     font-weight: bold;
     color: black;
     font-size: 25px;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif; 
+    border-radius: 5px; 
+    padding: 10px;
 }
 
 .top .btn{
@@ -120,116 +118,17 @@ html{
     color: rgb(0, 0, 85);
 }
 
-/*-------- TOP --------*/
 
-/*-------- CONTAIN ------*/
+
+
+
+
+/*------- CONTAIN -------*/
 
 .contain{
-    padding-top: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 100vh;
 }
 
-.contain .h1-contain{
-    font-size: 4em;
-}
-/*-------- CONTANT -------*/
-
-.contant{
-    width: 96%;
-}
-
-/*------- TENDANCE --------*/
-
-.tendance{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-bottom: 2px solid #a3a3a3;
-}
-
-/*------ TITLE ------*/
-
-.title{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.h1{
-    font-size: 2em;
-}
-
-/*--------- CARDS ---------*/
-
-.cards{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-.cards h1{
-    font-size: 2em;
-}
-
-/*------ CARD -------*/
-
-.card{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px;
-    width: 47%;
-}
-
-.card .info a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-}
-
-.card .info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.card .info img{ 
-    background-color: rgb(207, 207, 207);
-    margin: 10px;
-    width: 96%;
-    border: 1px solid black;
-}
-
-.card .info .info-p{
-    display: flex;
-    justify-content: left;
-    align-items: start;
-    flex-direction: column;
-    width: 95%;
-}
-
-.card .info .info-p .name{
-    font-size: 20px;
-    color: black;
-}
-
-.card .info .info-p .prix{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: black;
-}
 
 /*------FOOTER-----*/
 
@@ -303,12 +202,10 @@ footer{
 }
 
 .social-media{
-    position: absolute;
     padding-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .a-social-media{
@@ -316,7 +213,6 @@ footer{
     color: white;
     padding-right: 25px;
 }
-
 
 .feedback{
     padding-top: 45px;
@@ -326,87 +222,7 @@ footer{
     padding-top: 45px;
 }
 
-
-/*------ RETOUR TOP ------*/
-
-.btn-retour-top{ 
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-}
-
-.btn-retour-top ul li a{
-    font-size: 40px;
-    color: rgba(58, 107, 119, 0.5);
-}
-
-.btn-retour-top ul li a:hover{
-    transition-duration: 200ms;
-    color: rgb(58, 107, 119);
-}
-
-
-/*--------- RESPONSIVE ---------*/ 
-
-@media screen and (max-width: 1250px) {
-    .cards{
-        flex-direction: column;
-        width: 98%;
-        display: flex;
-        align-items: center;    
-    }
-
-    .card{
-        width: 100%;
-        margin: 0;
-    }
-
-    .card a{
-        width: 80%;
-    }
-
-    .cards .card img{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    .top .btn-center{
-        display: none;
-    }
-
-    .top .btn-right{
-        display: none;
-    }
-
-    .top .dropdown{
-        display: flex;
-    }
-} 
-
-
-@media screen and (max-width: 660px) {
-    .card{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .cards{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cards .card img{
-        width: 100%;
-    }
-
-    .btn-retour-top{
-        bottom: 15px;
-        right: 15px;
-    }
-
-}
+/*---- RESPONSIVE ----*/
 
 @media screen and (max-width: 1300px){
     footer{
@@ -435,10 +251,20 @@ footer{
         display: flex;
         flex-direction: column;
     }
+}
 
-    .btn-retour-top{
-        bottom: 25px;
-        right: 0px;
+@media screen and (max-width: 1150px) {
+    .top .btn-center{
+        display: none;
     }
 
-}
+    .top .btn-right{
+        display: none;
+    }
+
+    .top .dropdown{
+        display: flex;
+    }
+} 
+
+

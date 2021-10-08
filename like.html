@@ -1,120 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Registration Page | Y-Commerce</title>
-    <link rel="stylesheet" type="text/css" href="registration.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="like.css" rel="stylesheet" type="text/css">
+    <title>Vos Favoris | Y-Commerce</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://kit.fontawesome.com/0c87a70838.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="top">
-        <img class="banner" src="images/logo/banner.png">
-        <ul class="btn-center">
-            <li class="btn">
-                <a href="accueil.html">
-                    Accueil
-                </a>
-            </li>
-            <p>|</p>
-            <li class="btn">
-                <a href="homme.html">
-                    Homme
-                </a>
-            </li>
-            <p>|</p>
-            <li class="btn">
-                <a href="femme.html">
-                    Femme
-                </a>
-            </li>
-            <p>|</p>
-            <li class="btn">
-                <a href="nouveaute.html">
-                    Nouveauté
-                </a>
-            </li>
-            <p>|</p>
-            <li class="btn">
-                <a href="collection.html">
-                    Collection
-                </a>
-            </li>
-        </ul>
-        <ul class="btn-right">
-            <li>
-                <a href="like.html">
-                    <i class="far fa-heart"></i>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="wrapper">
-        <div class="title">
-          Registration Form
-        </div>
-        <div class="form">
-           <div class="inputfield">
-              <label>Prénom</label>
-              <input type="text" class="input">
-           </div>  
-            <div class="inputfield">
-              <label>Nom</label>
-              <input type="text" class="input">
-           </div>  
-           <div class="inputfield">
-              <label>Mot de passe</label>
-              <input type="password" class="input">
-           </div>  
-          <div class="inputfield">
-              <label>Confirmez le mot de passe</label>
-              <input type="password" class="input">
-           </div> 
-            <div class="inputfield">
-              <label>Genre</label>
-              <div class="custom_select">
-                <select>
-                  <option selected disabled hidden value="">Genre</option>
-                  <option value="male">Homme</option>
-                  <option value="female">Femme</option>
-                </select>
-              </div>
-           </div> 
-            <div class="inputfield">
-              <label>Addresse Email</label>
-              <input type="text" class="input">
-           </div> 
-          <div class="inputfield">
-              <label>Numéro de téléphone</label>
-              <input type="text" class="input">
-           </div> 
-          <div class="inputfield">
-              <label>Addresse</label>
-              <textarea class="textarea"></textarea>
-           </div> 
-          <div class="inputfield">
-              <label>Code Postale</label>
-              <input type="text" class="input">
-           </div> 
-          <div class="inputfield terms">
-              <label class="check">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <p>J'accepte les <a class="a-text" href="condition.html">conditions</a></p>
-           </div> 
-          <div class="inputfield">
-            <input type="submit" value="Register" class="btn">
-          </div>
-          <p class="login">Tu es deja enregistrer ? <a class="a-text" href="login.html">Connecte toi</a></p>
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- TOP -->
+<div class="top">
+    <img class="banner" src="images/logo/banner.png">
+    <ul class="btn-center">
+        <li class="btn">
+            <a href="accueil.html">
+                Accueil
+            </a>
+        </li>
+        <p>|</p>
+        <li class="btn">
+            <a href="homme.html">
+                Homme
+            </a>
+        </li>
+        <p>|</p>
+        <li class="btn">
+            <a href="femme.html">
+                Femme
+            </a>
+        </li>
+        <p>|</p>
+        <li class="btn">
+            <a href="nouveaute.html">
+                Nouveauté
+            </a>
+        </li>
+        <p>|</p>
+        <li class="btn">
+            <a href="collection.html">
+                Collection
+            </a>
+        </li>
+    </ul>
+    <ul class="btn-right">
+        <li>
+            <a href="">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </li>
+        <li>
+            <a href="registration.html">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="dropdown">
+        <button><i class="fas fa-bars"></i></button>
+        <div class="content">
+            <a href="accueil.html"><p>Accueil</p></a>
+            <a href="homme.html"><p>Homme</p></a>
+            <a href="femme.html"><p>Femme</p></a>
+            <a href="tendance.html"><p>Tendance</p></a>
+            <a href="collection.html"><p>Collection</p></a>
+            <a href=""><p><i class="fas fa-shopping-cart"></i></p></a>
+            <a href="registration.html"><p><i class="fas fa-user-circle"></i></p></a>
         </div>
     </div>
-           <!-- FOOTER -->
+</div>
+
+<div class="contain">
+
+</div>
+
+<!-- FOOTER -->
 <footer class="footer">
     <div class="footer-1">
         <div class="info-footer-acheter">
@@ -264,5 +226,9 @@
         </div>
     </div>
 </footer>
-  </body>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>

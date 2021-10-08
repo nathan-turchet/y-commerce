@@ -29,6 +29,7 @@
 .top .banner{
     margin-left: 20px;
     width: 15%;
+    min-width: 200px;
 }
 
 .top ul{
@@ -62,6 +63,59 @@
 
 .btn-right{
     margin-right: 15px;
+}
+
+/*----- DROPDOWN -----*/
+
+.top .dropdown button {
+    font-size: 35px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.top .dropdown{
+	display: none;
+	position: relative;
+    align-items: center;
+    justify-content: center;
+	height: 100%;
+    width: 25%;
+}
+
+.top .dropdown .content{
+	display: none;
+    position: relative;
+    right: 0px;
+    width: 300px;
+    height: auto;
+}
+
+.top .dropdown:hover .content{
+	display: block;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background-color: #ffffff;
+	top: 150px;
+    border: 2px solid black;
+}
+
+.top .dropdown:hover .content a{
+    padding: 20px;
+    width: auto; 
+}
+
+.top .dropdown .content a p{
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.top .dropdown:hover .content a p:hover{
+    color: rgb(0, 0, 85);
 }
 
 /*-------- TOP --------*/
@@ -98,6 +152,9 @@
 /*--------NOUVEAUTE -------*/
 
 .nouveaute{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     border-bottom: 1px solid #a3a3a3;
     display: flex;
@@ -107,6 +164,7 @@
 .nouveaute img{
     width: 45%;
     margin: 5px;
+    min-width: 350px;
 }
 
 /*--------NOS FAVORIS-------*/
@@ -123,6 +181,14 @@
 .nos-favoris .h2-favoris{
     font-size: 2.5em;
     padding-bottom: 15px;
+    text-align: center;
+}
+
+.nos-favoris .fav-1,
+.nos-favoris .fav-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-favoris{
@@ -133,7 +199,7 @@
 }
 
 .img-favoris img{
-    width: 100%;
+    width: 300px;
 }
 
 /*--------CREATION---------*/
@@ -150,26 +216,38 @@
 .creation .h2-creation{
     font-size: 2.5em;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .creation .img-creation{
     width: 100%;
 }
 
-.creation .btn-creation{
-    position: absolute;
-    top: 1565px;
-    right: 1431px;
-    font-size: 30px;
-    background-color: #c9192e;
-    border: none;
-    padding: 10px;
+.creation .content-crea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.creation .btn-creation:hover{
-    background-color: white;
-    color: black;
-    transition-duration: 300ms;
+.creation .content-crea a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 12px;
+    background-color: rgba(46, 72, 110, 0.6);
+}
+
+.creation .content-crea a p{
+    font-size: 25px;
+    color: white;
+}
+
+.creation .content-crea a:hover{
+    transition-duration: 200ms;
+    background-color: rgb(46, 72, 110, 0.9);
+
+    /* background:-webkit-linear-gradient(90deg, rgba(55, 98, 133, 0.75) 0%, rgba(50, 69, 150, 0.75) 100%, rgba(36, 30, 70, 0.75) 200%, rgba(20, 20, 24, 0.75) 300%); */
 }
 
 /* --------CATEGORIE---------*/
@@ -185,6 +263,7 @@
 .categorie .h3-categorie h3{
     font-size: 2.5em;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .categorie .categorie-media{
@@ -194,30 +273,28 @@
 }
 
 .categorie .media{
-    padding-right: .625rem;
-    padding-left: .625rem;
+    padding: .625rem;
     height: 275px;
     position: relative;
     overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .categorie .media img{
-    width: 100%;
+    width: 446px;
 }
 
 .categorie .media .overlay{
     bottom: 0;
-    left: 9px;
+    left: 10px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0px;
+    top: 10px;
     pointer-events: none;
     background: rgba(31, 19, 19, 0.7);
-    width: 96%;
-    height: 273px;
+    width: 446px;
+    height: 275px;
 }
 
 .categorie .media .overlay .wrapper{
@@ -287,25 +364,42 @@ footer{
     padding: 20px;
 }
 
+.footer-1,
+.footer-2{
+    justify-content: space-around;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
 .info-footer-notre-marque{
+    margin-bottom: 20px;
+    width: 200px;
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
 }
 
 .info-footer-aide{
+    margin-bottom: 20px;
+    width: 200px;
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
 }
 
 .info-footer-acheter{
+    margin-bottom: 20px;
+    width: 200px;
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
 }
 
 .info-footer-commande{
+    margin-bottom: 20px;
+    width: 200px;
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
@@ -350,4 +444,85 @@ footer{
     padding-top: 45px;
 }
 
+/*---- RESPONSIVE ----*/
 
+@media screen and (max-width: 1300px){
+    footer{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 635px;
+    }
+
+    .footer-1,
+    .footer-2{
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    footer{
+        height: 1000px;
+    }
+
+    .footer-1,
+    .footer-2{
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .top .btn-center{
+        display: none;
+    }
+
+    .top .btn-right{
+        display: none;
+    }
+
+    .top .dropdown{
+        display: flex;
+    }
+} 
+
+@media screen and (max-width: 1000px) {
+    .categorie .categorie-media,
+    .img-favoris .fav-1,
+    .img-favoris .fav-2,
+    .nouveaute{
+        flex-direction: column;
+    }
+
+    .img-favoris img{
+        border: 0.5px solid grey;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .img-favoris .fav-1,
+    .img-favoris .fav-2{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .img-favoris{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fav-1,
+    .fav-2{
+        margin: 25px;
+    }
+
+    .img-favoris img {
+        width: 350px;
+    }
+}

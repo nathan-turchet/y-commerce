@@ -52,12 +52,6 @@
     padding: 10px;
 }
 
-.top ul li a:hover{
-    transition-duration: 300ms;
-    color: white;
-    background-color: black;
-}
-
 .top .btn{
 	display: inline-block;
 }
@@ -112,12 +106,11 @@
 /*--------- HISTOIRE ---------*/
 
 .hist{
-    height: 510px;
     padding: 20px;
     display: flex;
     justify-content: center;
     width: 41%;
-    background-color: rgb(235, 217, 190);
+    background-color: rgb(220 220 220);
     margin: 20px;
     margin-bottom: 100px;
 }
@@ -125,6 +118,11 @@
 .hist h2{
     font-size: 2em;
     text-align: center;
+    font-weight: lighter;
+}
+
+.hist h2 strong{
+    font-weight: 600;
 }
 
 
@@ -140,25 +138,42 @@ footer{
     padding: 20px;
 }
 
+.footer-1,
+.footer-2{
+    justify-content: space-around;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
 .info-footer-notre-marque{
+    margin-bottom: 20px;
+    width: 200px;
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
 }
 
 .info-footer-aide{
+    margin-bottom: 20px;
+    width: 200px;
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
 }
 
 .info-footer-acheter{
+    margin-bottom: 20px;
+    width: 200px;
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
 }
 
 .info-footer-commande{
+    margin-bottom: 20px;
+    width: 200px;
     position: relative;
     padding-right: 40px;
     padding-left: 40px;
@@ -201,4 +216,35 @@ footer{
 
 .par-produit{
     padding-top: 45px;
+}
+
+/*---- RESPONSIVE ----*/
+
+@media screen and (max-width: 1300px){
+    footer{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 635px;
+    }
+
+    .footer-1,
+    .footer-2{
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    footer{
+        height: 1000px;
+    }
+
+    .footer-1,
+    .footer-2{
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
