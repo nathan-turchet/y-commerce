@@ -29,6 +29,7 @@
 .top .banner{
     margin-left: 20px;
     width: 15%;
+    min-width: 200px;
 }
 
 .top ul{
@@ -106,6 +107,7 @@
 /*--------- HISTOIRE ---------*/
 
 .hist{
+    min-width: 400px;
     padding: 20px;
     display: flex;
     justify-content: center;

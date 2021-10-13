@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Login Page | Y_Commerce</title>
-    <link rel="stylesheet" type="text/css" href="login.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://kit.fontawesome.com/0c87a70838.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="top">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Polo Bleu Nuit | Y-Commerce</title>
+        <link rel="stylesheet" type="text/css" href="produit.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/0c87a70838.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="top" class="top">
         <img class="banner" src="images/logo/banner.png">
         <ul class="btn-center">
             <li class="btn">
                 <a href="accueil.html">
                     Accueil
-                </a>
-            </li>
-            <p>|</p>
-            <li class="btn">
-                <a href="homme.html">
-                    Homme
                 </a>
             </li>
             <p>|</p>
@@ -43,7 +41,7 @@
         </ul>
         <ul class="btn-right">
             <li>
-                <a href="">
+                <a href="like.html">
                     <i class="far fa-heart"></i>
                 </a>
             </li>
@@ -71,41 +69,79 @@
             </div>
         </div>
     </div>
-    <div class="wrapper">
-        <div class="title">
-          Login Form
+
+
+    <div class="contain">
+        <div class="left">
+            <div class="selection">
+                <img src="images/vetement/polo-bleu-nuit1.png">
+                <div class="description">
+                    <h2 class="prix">25,99</h2>
+                    <p class="p-description">il est bleu</p>
+                </div>
+            </div>
+            <div class="exemple">
+                <img src="images/vetement/polo-grist1.png">
+                <img src="images/vetement/polo-bleu-nuit1.png">
+                <img src="images/vetement/polo-grist1.png">
+                <img src="images/vetement/polo-bleu-nuit1.png">
+            </div>
         </div>
-        <div class="form">
-           <div class="inputfield">
-              <label>Prénom</label>
-              <input type="text" class="input">
-           </div>  
-            <div class="inputfield">
-              <label>Nom</label>
-              <input type="text" class="input">
-           </div>  
-           <div class="inputfield">
-              <label>Email</label>
-              <input type="text" class="input">
-           </div>  
-          <div class="inputfield">
-              <label>Mot de passe</label>
-              <input type="password" class="input">
-           </div> 
-          <div class="inputfield terms">
-              <label class="check">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <p>Se souvenir de moi</p>
-           </div> 
-          <div class="inputfield">
-            <input type="submit" value="Login" class="btn">
-          </div>
-          <p class="registration">Tu n'es pas encore enregistrer ? <a class="a-text" href="registration.html">Enregistre-toi</a></p>
+        <div class="right">
+            <h1 class="name">Polo Bleu Nuit</h1>
+            <div class="color">
+                <p class="p-color">Color : <span class="class-color">Bleu</span></p>
+                <div class="color-choose">
+                    <button>
+                        <img src="images/vetement/color/bleu-nuit.png">
+                        <p>Bleu Nuit</p>
+                    </button>
+                    <button>
+                        <img src="images/vetement/color/gris.png">
+                        <p>Gris</p>
+                    </button>
+                </div>
+            </div>
+            <div class="taille">
+                <p class="p-taille">Taille : <span class="class-taille">XS</span></p>
+                <div class="taille-choose">
+                    <button class="XS">
+                        <p>XS</p>
+                    </button>
+                    <button class="S">
+                        <p>S</p>
+                    </button>
+                    <button class="M">
+                        <p>M</p>
+                    </button>
+                    <button class="L">
+                        <p>L</p>
+                    </button>
+                    <button class="XL">
+                        <p>XL</p>
+                    </button>
+                    <button class="XXL">
+                        <p>XXL</p>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
-            <!-- FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FOOTER -->
 <footer class="footer">
     <div class="footer-1">
         <div class="info-footer-acheter">
@@ -255,5 +291,19 @@
         </div>
     </div>
 </footer>
-  </body>
+
+<div class="btn-retour-top">
+    <ul>
+        <li>
+            <a href="#top">
+                <i class="fas fa-arrow-circle-up"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+    
+    <script>
+		AOS.init();
+	</script>
+</body>
 </html>

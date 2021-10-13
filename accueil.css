@@ -220,6 +220,7 @@
 }
 
 .creation .img-creation{
+    min-width: 450px;   
     width: 100%;
 }
 
